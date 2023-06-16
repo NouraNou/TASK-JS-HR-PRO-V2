@@ -3,20 +3,15 @@ const managersJSON = require('./managers.json');
 
 // Code Here
 class Employee {
-"name" 
-"position"
-"yearJoied"
-"salary"
-
-    constructor(name, position ,yearJoied, salary)
+    constructor(name, position ,yearJoined, salary)
     {
         this.name = name;
         this.position = position;
-        this.yaerJpoined = yearJpined;
+        this.yaerJpoined = yearJoined;
         this.salary = salary;
     } 
 
-    Employee.function (idbadge){
+    idBadge(){
 
       Employee.emloyees.filter((emp1) => {
         
@@ -25,32 +20,80 @@ class Employee {
     
 
     }
+//2. Create a variable called `superHeroes` which will have ony employees who are developers.
+    function (employees) {
+        let superHeroes = [];
+         for ( i =0 ; i <= employees.lenght ; i++){
+            if ( employees.emp[1] === "Developer" ){
+
+                superHeroes.push(employees.emp[1])
+
+            }
+         }
+         
+    }
+
+  
 }
 
-class Maneger extend Employee {
-
-    bonusPercentage;
-
-    constructor(name, position, yearJoined , salary, bonusPercentage){
+class Maneger extends Employee {
+    constructor(name, position, salary, bonusPercentage, currentYear){
         super(name , position, yaerJoined, salary);
         this.bonusPercentage = bonusPercentage;
-         
+        this.currentYear = currentYear;
+     }
 
-    }
-    
+        salaryIncreas(increaseAmount){
 
-       function salaryIncreas(Emloyee){
+        return this.salery = salary + increaseAmount; 
 
-        
+       }
+       
+
+
+       logManagerInfo =(name, yearJoined, bounusPercentage) =>{
+
+        return ("name: " + name + "\n" + "since: " + yearJoined + "\n" + "Bonus: " + bounusPercentage );
 
        }
 
 
+       getWorkingYears =( yaerJoined , currentYear) => {
+
+        return (workingYears = currentYear - yaerJoined);
+
+       }
+
+       employees.forEach ((idBadge.emp1[1])) {
+         
+        return idBadge.emp1[1]; //dont understand the code!! i just made it up 
+        
+    };
+
+    
+
+    
+     function(managers){
+        for (i=0 ; i <= managers.length ; i++){
+
+            if (getWorkingYears.workingYears === 11){
+
+                return salaryIncreas(1000);
+            }
+
+        }
+     };
+
+     managers.forEach=(manager)=>{
+
+        return logManagerInfo();
+     }
+
     }
 
 
-
-
+    const mapemployee = new Map( Object.entries(employeesJSON) );
+    const mapmanager = new Map( Object.entries(managersJSON) );
 
 
 
