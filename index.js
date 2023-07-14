@@ -64,33 +64,45 @@ class Maneger extends Employee {
 
        }
 
-       employees.forEach ((idBadge.emp1[1])) {
-         
+       increaseAmount = (getWorkingYears)=>{
+        for (i=0 ; i <= managers.length ; i++){
+            if(getWorkingYears.workingYears > 11) {
+            this.salary= salary + 1000;
+            }
+        }
+       };
+        //  function(managers){
+    //     for (i=0 ; i <= managers.length ; i++){
+
+    //         if (getWorkingYears.workingYears === 11){
+
+    //             return salaryIncreas(1000);
+    //         }
+
+    //     }
+    //  };
+
+       logName(){ 
+
+        Employee.emloyees.forEach(idBadge.emp1[1]) {
+
         return idBadge.emp1[1]; //dont understand the code!! i just made it up 
-        
+        }  
     };
 
     
 
     
-     function(managers){
-        for (i=0 ; i <= managers.length ; i++){
-
-            if (getWorkingYears.workingYears === 11){
-
-                return salaryIncreas(1000);
-            }
-
-        }
-     };
+  
 
      managers.forEach=(manager)=>{
 
-        return logManagerInfo();
+        return logManagerInfo(); 
      }
 
     }
 
+    
 
     const mapemployee = new Map( Object.entries(employeesJSON) );
     const mapmanager = new Map( Object.entries(managersJSON) );
